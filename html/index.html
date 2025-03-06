@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beginning</title>
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-  <nav>
+  <nav class="header">
+    <h1>Barra de Navegação</h1>
+  </nav>
+  <nav class="changePage">
+    <h5>Clique abaixo para mudar de página</h5>
     <ul>
       <li><a href="blog.html">Isabel</a></li>
     </ul>
   </nav>
 <!-- Cabeçalhos -->
   <h1> Isabel </h1>
+  <h1 class="green"> Isabel </h1>
+  <h1> Isabel </h1>
   <h2> Isabel </h2>
-  <h3> Isabel </h3>
+  <h3 class="green"> Isabel </h3>
   <h4> Isabel </h4>
-  <h5> Isabel </h5>
+  <h5 class="green"> Isabel </h5>
   <h6> Isabel </h6>
 
   <!-- Paragrafos -->
@@ -24,24 +31,38 @@
   <p> Lacerda <em> Vasconcelos </em> </p> <!-- em = itálico -->
 
 
-  <p> 
+  <p class="paragrafo"> 
     <a href=https://www.bibliaonline.com.br/acf/sl/91 target="_blank">1 Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.</a> 
-    <p>2 Direi do Senhor: Ele é o meu Deus, o meu refúgio, a minha fortaleza, e nele confiarei.
+    <br>
+    2 Direi do Senhor: Ele é o meu Deus, o meu refúgio, a minha fortaleza, e nele confiarei.
+    <br>
     3 Porque ele te livrará do laço do passarinheiro, e da peste perniciosa.
+    <br>
     4 Ele te cobrirá com as suas penas, e debaixo das suas asas te confiarás; a sua verdade será o teu escudo e broquel.
+    <br>
     5 Não terás medo do terror de noite nem da seta que voa de dia,
+    <br>
     6 Nem da peste que anda na escuridão, nem da mortandade que assola ao meio-dia.
+    <br>
     7 Mil cairão ao teu lado, e dez mil à tua direita, mas não chegará a ti.
+    <br>
     8 Somente com os teus olhos contemplarás, e verás a recompensa dos ímpios.
+    <br>
     9 Porque tu, ó Senhor, és o meu refúgio. No Altíssimo fizeste a tua habitação.
+    <br>
     10 Nenhum mal te sucederá, nem praga alguma chegará à tua tenda.
+    <br>
     11 Porque aos seus anjos dará ordem a teu respeito, para te guardarem em todos os teus caminhos.
+    <br>
     12 Eles te sustentarão nas suas mãos, para que não tropeces com o teu pé em pedra alguma.
+    <br>
     13 Pisarás sobre o leão e a cobra; calcarás aos pés o leão jovem e a serpente.
+    <br>
     14 Porquanto tão encarecidamente me amou, também eu o livrarei; pô-lo-ei em retiro alto, porque conheceu o meu nome.
+    <br>
     15 Ele me invocará, e eu lhe responderei; estarei com ele na angústia; dela o retirarei, e o glorificarei.
+    <br>
     16 Fartá-lo-ei com longura de dias, e lhe mostrarei a minha salvação.
-    </p>
   </p>
 
   <!-- Tabelas -->
@@ -71,7 +92,15 @@
       </tr>
     </tbody>
   </table>
-
+  
+  
+  
+  <div class="boxRelative">
+    <div class="boxAbsolute">
+      <h1>Absolute</h1>
+    </div>
+  </div>  
+    
 
   <br> <!-- Espaço -->
   <hr> <!-- Linha -->
@@ -80,47 +109,49 @@
 
   <p></p>
   <!-- Formulários -->
-   <form action="exemplo.php" method="POST">
-    <div>
-      <label for="">Primeiro Nome:</label>
-      <input type="text" name="" id="" placeholder="Digite seu primeiro nome"/>
-    </div>
+  <div class="form">
+    <form action="exemplo.php" method="POST">
+      <div class="formGroup">
+        <label for="">Primeiro Nome:</label>
+        <input type="text" name="" id="" placeholder="Digite seu primeiro nome"/>
+      </div>
 
-    <div>
-      <label for="">Segundo Nome:</label>
-      <input type="text" name="" id="" placeholder="Digite seu segundo nome"/>
-    </div>
+      <div class="formGroup">
+        <label for="">Segundo Nome:</label>
+        <input type="text" name="" id="" placeholder="Digite seu segundo nome"/>
+      </div>
 
-    <div>
-      <label for="">Email:</label>
-      <input type="email" name="" id="" placeholder="Digite seu e-mail"/>
-    </div>
+      <div class="formGroup">
+        <label for="">Email:</label>
+        <input type="email" name="" id="" placeholder="Digite seu e-mail"/>
+      </div>
 
-    <div>
-      <label for="">Sexo:</label>
-      <select name="" id="">
-        <option value="feminino">Feminino</option>
-        <option value="masculino">Masculino</option>
-      </select>
-    </div>
+      <div class="formGroup">
+        <label for="">Sexo:</label>
+        <select name="" id="">
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+        </select>
+      </div>
 
-    <div>
-      <label for="">Data de nascimento:</label>
-      <input type="date" name="" id=""/>
-    </div>
+      <div class="formGroup">
+        <label for="">Data de nascimento:</label>
+        <input type="date" name="" id=""/>
+      </div>
 
-    <div>
-      <label for="">Senha:</label>
-      <input type="password" name="" id="" placeholder="Digite a sua senha"/>
-    </div>
+      <div class="formGroup">
+        <label for="">Senha:</label>
+        <input type="password" name="" id="" placeholder="Digite a sua senha"/>
+      </div>
 
-    <div>
-      <label for="">Mensagem:</label>
-      <textarea name="" id="" placeholder="Insira sua mensagem"></textarea>
-    </div>
+      <div class="formGroup">
+        <label for="">Mensagem:</label>
+        <textarea name="" id="" placeholder="Insira sua mensagem"></textarea>
+      </div>
 
-    <input type="submit"> <!-- Botão -->
-   </form>
+      <input type="submit" class="button"> <!-- Botão -->
+    </form>
+  </div>
 
   <!-- Botões -->
   <br>
@@ -141,5 +172,17 @@
   <p>Eu amo a <abbr title="Gabriella & Eduarda">E&G</abbr></p> <!--- Aparece quando o cursor passa em cima -->
 
   <p>Criado por <cite>Isabel</cite></p>
+
+
+  <div class="categories">
+    <ul>
+      <h2>Categorias</h2>
+      <li>estilização</li>
+      <li>estilização</li>
+      <li>estilização</li>
+      <li>estilização</li>
+      <li>estilização</li>
+    </ul>
+  </div>
 </body>
 </html>

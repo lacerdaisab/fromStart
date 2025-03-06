@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box; /* ajuda a não perder a centralização */
+}
+
+.green {
+  color: green;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.paragrafo {
+  width: 80%;
+  margin: auto;
+  
+  /* espaço do lado de dentro do conteudo */
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  /* mesma coisa que acima */
+  padding: auto;
+
+  /* borda */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  /* mesma coisa que acima */
+  border: 2px solid black;
+
+  /* espaço do lado de fora do conteudo */
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  /* mesma coisa que acima */
+  margin: 50px;
+}
+
+.changePage {
+  text-align: center;
+}
+
+.changePage ul {
+  list-style: none;
+  padding: 0;
+}
+
+.changePage ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.changePage ul a:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.changePage ul a:visited {
+  color: blue;
+}
+
+
+/* Formulários */
+.form {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+}
+
+.form .formGroup {
+  padding-bottom: 1%;
+}
+
+.form .formGroup input {
+  padding: 0.3%;
+  width: 100%;
+}
+
+.form .formGroup label {
+  display: block;
+  align-items: center;
+}
+
+.button {
+  padding: 1%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
+/* Positions */
+.boxRelative {
+  position: relative;
+  border: 3px solid black;
+  height: 500px;
+}
+
+.boxAbsolute {
+  position: absolute;
+  bottom: 0;
+  border: 3px solid black;
+}
+
+
+
+/* Barra de Navegação */
+.header {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  /* fixa e faz andar junto dentro da página */
+  position: sticky;
+  top: 0;
+}
+
+
+
+/* Categorias */
+.categories ul {
+  list-style: none;
+}
+
+/* .categories ul li:first-child {
+  color: red;
+}
+
+.categories ul li:last-child {
+  color: blueviolet;
+}
+
+.categories ul li:nth-child(3) {
+  color: pink;
+} */
+
+.categories ul li:nth-child(even) {
+  color: pink;
+}
+
+.categories ul li:nth-child(odd) {
+  color: blue;
+}
